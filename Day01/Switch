@@ -1,1 +1,65 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n=2;
+    switch(2)
+    {
+        case 1: {
+            cout << "First" << endl;
+                break;
+            }
 
+        case 2: {
+            cout << "Second" << endl;
+                break;
+            }
+
+        default : {
+            cout << "It defualt case" << endl;
+        }
+    }
+
+    // cout <<  "====Nested Switch Case===="  << endl;
+    int n = 2;
+    int m = 3;
+    cout << "Nested Switch Case Example" << endl;
+    switch (n)
+    {
+    case 1:
+    {
+        cout << "First" << endl;
+        break;
+    }
+
+    case 2:
+    {
+        cout << "Second" << endl;
+        switch (m)
+        {
+        case 1:
+        {
+            cout << "Nested First" << endl;
+            break;
+        }
+        case 2:
+        {
+            cout << "Nested Second" << endl;
+            break;
+        }
+        default:
+        {
+            cout << "Nested Default" << endl;
+        }
+        }
+        break;
+    }
+
+    default:
+    {
+        cout << "It default case" << endl;
+    }
+    }
+
+    return 0;
+}
